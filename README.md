@@ -38,6 +38,11 @@ detector = FastLangDetect()
 detector.detect(['Where is my mother?', 'pies i kot na drodze.'])
 # [{'en': 0.996435284614563}, {'sl': 0.6256219148635864}] 
 ```
+All 176 model lables can be exposed via `get_labels()` method.
+```python
+detector.get_labels()
+```
+If you want associated frequencies just pass `include_freq=True` to the `get_labels` method.
 
 ## Installation
 `pip install .`
