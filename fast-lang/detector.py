@@ -53,7 +53,7 @@ class FastLangDetect(object):
             return dict( zip(key,val) )
         else:
             text = [self._preprocess(x) for x in item]
-            res = self.model.predict(text, k=3)
+            res = self.model.predict(text, *args, **kwargs)
 
             ret = []
             keys = res[0]

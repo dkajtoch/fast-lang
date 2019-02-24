@@ -13,7 +13,7 @@ setup(
     author_email='dkajtoch@gmail.com',
     description='FastText language detection tool.',
     keywords="fastText, language detection, NLP",
-    url='https://github.com/dkajtoch/fastlang',
+    url='https://github.com/dkajtoch/fast-lang',
     license='MIT',
     classifiers=[
         'License :: OSI Approved :: MIT License',
@@ -33,8 +33,8 @@ setup(
         str('fastlang'),
         str('fastlang.tests'),
     ],
+    package_dir = {"fastlang": "fast-lang"},
     package_data={'fastlang': ['data/*', 'model/*']},
     zip_safe=False,
-    test_suite='tests',
-    test_require=["unittest"]
+    include_package_data=True,
 )
