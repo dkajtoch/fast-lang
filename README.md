@@ -1,5 +1,5 @@
 # fast-lang
-Language detection tool based on fastText pretrained model.
+Language detection tool based on fastText [pretrained model](https://fasttext.cc/docs/en/language-identification.html).
 
 ## Text preprocessing
 Numbers, punctuation and repeating whitespaces are removed before feeding into language detector tool.
@@ -46,3 +46,7 @@ If you want associated frequencies just pass `include_freq=True` to the `get_lab
 
 ## Installation
 `pip install .`
+
+## References
+* A. Joulin, E. Grave, P. Bojanowski, T. Mikolov, Bag of Tricks for Efficient Text Classification
+* A. Joulin, E. Grave, P. Bojanowski, M. Douze, H. Jégou, T. Mikolov, FastText.zip: Compressing text classification models
